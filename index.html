@@ -7,17 +7,35 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 		:root {
-			--bs-primary-rgb: 75,0,130;
+			--bs-primary-rgb: 151, 35, 201;
+			--bs-warning-rgb: 244, 215, 56;
+		}
+
+
+		h1 {
+			font-family: 'Lexend Mega', sans-serif;
+			font-weight: 600;
 		}
 		
 		.card {
 			max-width: 20rem;
 		}
+		
+		.card-header {
+			font-family: 'Lexend Mega', sans-serif;
+			font-weight: 300;
+		}
+
+		.shadow-heavy {
+			box-shadow: 4px 6px black;
+		}
 
 	</style>
 </head>
-<body class="bg-primary bg-gradient" style="min-height: 100vh;">
+<body class="bg-warning" style="min-height: 100vh;">
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 		<symbol id="bootstrap" viewBox="0 0 118 94">
 			<title>Bootstrap</title>
@@ -26,68 +44,83 @@
 			</path>
 		</symbol>
 	</svg>
-	<header class="py-5">
-		<div class="container text-light text-center text-capitalize">
-			<h1 class="text-decoration-underline link-offset-2">My bootstrap pages</h1>
+	<header class="container py-5">
+		<div class="col-10 col-lg-8 col-xxl-6 text-center text-capitalize bg-light border border-black border-5 rounded-3 p-2 mx-auto shadow-heavy">
+			<h1>My bootstrap pages</h1>
 		</div>
 	</header>
-	<section class="container">
-		<div class="row row-cols-1 row-cols-md-2 g-5">
-			<div class="col">
-				<div class="card text-bg-dark bg-opacity-75 mb-3 mx-auto">
-					<div class="card-header bg-dark">v1.1</div>
-					<div class="card-body">
-						<h5 class="card-title">Government Reform Institute</h5>
-						<p class="card-text">A mock-up of a landing page for the Government Reform Institute (GRI), a non-profit think-tank aimed at reducing waste and inefficiency in our nation's defense sector</p>
-						<a href="./government-reform-institute.html" class="btn btn-outline-light">Take Me There</a>
+	<section class="d-flex justify-content-center">
+		<div class="container col-lg-9">
+			<div class="row row-cols-1 row-cols-md-2 g-3">
+				<div class="col">
+					<div class="card text-bg-light bg-opacity-75 mb-3 mx-auto shadow-heavy border border-black border-3">
+						<div class="card-header bg-light">v1.1</div>
+						<div class="card-body">
+							<h5 class="card-title">Government Reform Institute</h5>
+							<p class="card-text">A mock-up of a landing page for the Government Reform Institute (GRI), a non-profit think-tank aimed at reducing waste and inefficiency in our nation's defense sector</p>
+							<a href="./government-reform-institute.html" class="btn btn-outline-dark">Take Me There</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col">
-				<div class="card text-bg-dark bg-opacity-75 mb-3 mx-auto">
-					<div class="card-header bg-dark">Coming soon...</div>
-					<div class="card-body">
-						<h5 class="card-title">Definitely Not Amazon</h5>
-						<p class="card-text">A mock-up of an e-commernce site that's expressly NOT modeled on the garage-based booksellers who now dominate our daily lives.</p>
-						<a href="./not-amazon.html" class="btn btn-outline-light">Take Me There</a>
+				<div class="col">
+					<div class="card text-bg-light bg-opacity-75 mb-3 mx-auto shadow-heavy border border-black border-3">
+						<div class="card-header bg-light">Coming soon...</div>
+						<div class="card-body">
+							<h5 class="card-title">Definitely Not Amazon</h5>
+							<p class="card-text">A mock-up of an e-commernce site that's expressly NOT modeled on the garage-based booksellers who now dominate our daily lives.</p>
+							<a href="./not-amazon.html" class="btn btn-outline-dark">Take Me There</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col">
-				<div class="card text-bg-dark bg-opacity-75 mb-3 mx-auto">
-					<div class="card-header bg-dark">Coming soon...</div>
-					<div class="card-body">
-						<h5 class="card-title">My Digital Resume</h5>
-						<p class="card-text">Because who doesn't like writing a resume... <span class="ms-5">again.</span></p>
-						<a href="./resume-site.html" class="btn btn-outline-light ">Take Me There</a>
+				<div class="col">
+					<div class="card text-bg-light bg-opacity-75 mb-3 mx-auto shadow-heavy border border-black border-3">
+						<div class="card-header bg-light">Coming soon...</div>
+						<div class="card-body">
+							<h5 class="card-title">My Digital Resume</h5>
+							<p class="card-text">Because who doesn't like writing a resume...</p>
+							<p class="card-text text-end">again.</p>
+							<a href="./resume-site.html" class="btn btn-outline-dark ">Take Me There</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col">
-				<div class="card text-bg-dark bg-opacity-75 mb-3 mx-auto">
-					<div class="card-header bg-dark">Coming soon...</div>
-					<div class="card-body">
-						<h5 class="card-title">Empty Bootstrap Template</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="./empty-bootstrap.html" class="btn btn-outline-light">Take Me There</a>
+				<div class="col">
+					<div class="card text-bg-light bg-opacity-75 mb-3 mx-auto shadow-heavy border border-black border-3">
+						<div class="card-header bg-light">Coming soon...</div>
+						<div class="card-body">
+							<h5 class="card-title">Empty Bootstrap Template</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="./empty-bootstrap.html" class="btn btn-outline-dark">Take Me There</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<footer class="d-flex justify-content-center align-items-center px-5 py-3 mt-2">
-		<div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+	<footer class="d-flex justify-content-center align-items-center px-5 pb-3 mt-3 mt-sm-0">
+		<div class="d-flex flex-column gap-2 align-items-center justify-content-center">
 			<a href="./index.html" class="text-decoration-none lh-1">
-				<svg class="bi" width="45" height="36" fill="#f8f9fa">
+				<svg class="bi" width="45" height="36" fill="#000">
 					<use xlink:href="#bootstrap"></use>
 				</svg>
 			</a>
-			<span class="text-center text-light h6">© 2023 Walker Marlatt</span>
+			<button type="button" id="name-button" class="d-flex justify-content-center align-items-center py-2 px-3 bg-light rounded-3 border border-black border-3 fw-bold shadow-heavy">
+				© 2023 Walker Marlatt
+			</button>
 		</div>
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 		crossorigin="anonymous"></script>
+	<script>
+		let nameButton = document.querySelector("#name-button");
+		let docBody = document.querySelector("body");
+		nameButton.addEventListener("click", () => {
+			let currentBgColor = docBody.classList;
+			currentBgColor.contains("bg-warning") ? 
+			currentBgColor.replace("bg-warning", "bg-primary") : 
+			currentBgColor.replace("bg-primary", "bg-warning") ;
+		})
+	</script>
 </body>
 </html>
