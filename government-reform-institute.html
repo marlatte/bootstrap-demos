@@ -41,10 +41,16 @@
 			--bs-btn-hover-bg: var(--wm-navy-light);
 			--bs-btn-hover-border-color: var(--wm-navy-light);
 		}
+
+		#cards-pics-text .card {
+			border: none;
+			text-align: center;
+			--bs-card-bg: ;
+		}
 	</style>
 </head>
 
-<body class="bg-secondary-subtle">
+<body class="bg-light">
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 		<symbol id="bootstrap" viewBox="0 0 118 94">
 			<title>Bootstrap</title>
@@ -103,7 +109,6 @@
 						</ul>
 					</li>
 				</ul>
-				<button type="button" class="btn btn-primary me-5" id="liveToastBtn">Click me for a message</button>
 				<form class="d-flex" role="search">
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 					<button class="btn btn-outline-light" type="submit">Search</button>
@@ -120,11 +125,11 @@
 						<div class="card-body p-5">
 							<h3 class="mb-4" style="color: #4f4f4f;">Are you ready to secure America?</h3>
 							<p class="mb-4 text-secondary">
-								With over <em class="text-secondary-emphasis">50 years</em> of expertise in government reform, we know what it takes to move this country forward. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quaerat, ex, rerum perferendis rem quas mollitia alias illum repellendus, dolorum ipsa. Quia, nulla dolorem. Commodi facere cum sapiente aliquam alias?
+								With over <strong class="text-secondary-emphasis">50 years</strong> of expertise in government reform, we know what it takes to move this country forward. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quaerat, ex, rerum perferendis rem quas mollitia alias illum repellendus, dolorum ipsa. Quia, nulla dolorem. Commodi facere cum sapiente aliquam alias?
 							</p>
 							<div class="col-10 mx-auto">
 								<button type="button" class="btn btn-outline-primary me-sm-2 me-md-4 me-xxl-5 mb-4 mb-sm-0">Learn more</button>
-								<button type="button" class="btn btn-primary">Join the movement</button>
+								<button type="button" class="btn btn-primary" id="liveToastBtn">Join the movement</button>
 							</div>
 						</div>
 				</div>
@@ -135,7 +140,7 @@
 			<div id="nav-pills" class="container">
 				<ul class="nav nav-pills nav-fill p-1 bg-primary bg-gradient rounded-5 shadow-sm  mx-auto" id="pillNav2"
 					role="tablist"
-					style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+					style="--bs-nav-link-color: var(--bs-white); --bs-nav-link-hover-color: var(--bs-primary-border-subtle);--bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
 					<li class="nav-item" role="presentation">
 						<button class="nav-link px-1 rounded-5 active" id="home-tab2" data-bs-toggle="tab"
 							data-bs-target="#cards-pics-text" type="button" role="tab" aria-selected="true">Pic
@@ -156,49 +161,51 @@
 				<div id="cards-pics-text" class="container mt-4 tab-pane fade show active">
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
 						<div class="col">
-							<div class="card h-100">
-								<img src="https://picsum.photos/id/158/300/200" class="card-img-top" alt="...">
+							<div class="card">
+								<a href="#"><img src="https://picsum.photos/id/158/300/200" class="card-img-top shadow rounded-3" alt="..."></a>
 								<div class="card-body">
 									<h5 class="card-title">Rockstars of Reform</h5>
-									<p class="card-text">This is a longer card with supporting text below as a natural
-										lead-in to
-										additional content. This content is a little bit longer.</p>
+									<p class="card-text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									</p>
+									<div class="text-secondary">2 hours ago</div>
 								</div>
-								<div class="card-footer text-secondary">2 hours ago</div>
 							</div>
 						</div>
 						<div class="col">
-							<div class="card h-100">
-								<img src="https://picsum.photos/id/299/300/200" class="card-img-top" alt="...">
+							<div class="card">
+								<a href="#"><img src="https://picsum.photos/id/299/300/200" class="card-img-top shadow rounded-3" alt="..."></a>
 								<div class="card-body">
 									<h5 class="card-title">American Resurgence</h5>
-									<p class="card-text">This is a short card.</p>
+									<p class="card-text">
+										Labore nostrum voluptates sed excepturi fuga id eius.
+									</p>
+									<div class="text-secondary">2 days ago</div>
 								</div>
-								<div class="card-footer text-secondary">2 days ago</div>
 							</div>
 						</div>
 						<div class="col">
-							<div class="card h-100">
-								<img src="https://picsum.photos/id/297/300/200" class="card-img-top" alt="...">
+							<div class="card">
+								<a href="#"><img src="https://picsum.photos/id/297/300/200" class="card-img-top shadow rounded-3" alt="..."></a>
 								<div class="card-body">
 									<h5 class="card-title">Protecting Vital Industry</h5>
-									<p class="card-text">This is a longer card with supporting text below as a natural
-										lead-in to
-										additional content.</p>
+									<p class="card-text">
+										Sequi deserunt nemo quos eum consectetur nisi quo.
+									</p>
+									<div class="text-secondary">3 days ago</div>
 								</div>
-								<div class="card-footer text-secondary">3 days ago</div>
 							</div>
 						</div>
 						<div class="col">
-							<div class="card h-100">
-								<img src="https://picsum.photos/id/363/300/200" class="card-img-top" alt="...">
+							<div class="card">
+								<a href="#"><img src="https://picsum.photos/id/363/300/200" class="card-img-top shadow rounded-3" alt="..."></a>
 								<div class="card-body">
 									<h5 class="card-title">Infrastructure Week</h5>
-									<p class="card-text">This is a longer card with supporting text below as a natural
-										lead-in to
-										additional content. This content is a little bit longer.</p>
+									<p class="card-text">
+										Soluta ipsa ipsam asperiores nesciunt. Dolores excepturi.
+									</p>
+									<div class="text-secondary">4 days ago</div>
 								</div>
-								<div class="card-footer text-secondary">4 days ago</div>
 							</div>
 						</div>
 					</div>
@@ -207,19 +214,18 @@
 					<div class="row row-cols-1 row-cols-md-4 g-4">
 						<div class="col">
 							<div class="card h-100">
-								<h5 class="card-header">Other Analysis</h5>
 								<div class="card-body">
+									<h5 class="card-title">Other Analysis</h5>
 									<p class="card-text">This is a longer card with supporting text below as a natural
-										lead-in to
-										additional content. This content is a little bit longer.</p>
+										lead-in to additional content. This content is a little bit longer.</p>
 								</div>
 								<div class="card-footer text-secondary">2 hours ago</div>
 							</div>
 						</div>
 						<div class="col">
 							<div class="card h-100">
-								<h5 class="card-header">Other Analysis</h5>
 								<div class="card-body">
+									<h5 class="card-title">Other Analysis</h5>
 									<p class="card-text">This is a short card.</p>
 								</div>
 								<div class="card-footer text-secondary">2 days ago</div>
@@ -227,22 +233,20 @@
 						</div>
 						<div class="col">
 							<div class="card h-100">
-								<h5 class="card-header">Other Analysis</h5>
 								<div class="card-body">
+									<h5 class="card-title">Other Analysis</h5>
 									<p class="card-text">This is a longer card with supporting text below as a natural
-										lead-in to
-										additional content.</p>
+										lead-in to additional content.</p>
 								</div>
 								<div class="card-footer text-secondary">3 days ago</div>
 							</div>
 						</div>
 						<div class="col">
 							<div class="card h-100">
-								<h5 class="card-header">Other Analysis</h5>
 								<div class="card-body">
+									<h5 class="card-title">Other Analysis</h5>
 									<p class="card-text">This is a longer card with supporting text below as a natural
-										lead-in to
-										additional content. This content is a little bit longer.</p>
+										lead-in to additional content. This content is a little bit longer.</p>
 								</div>
 								<div class="card-footer text-secondary">4 days ago</div>
 							</div>
@@ -259,16 +263,15 @@
 	</main>
 	<section id="toast-messages">
 		<div class="toast-container position-fixed bottom-0 end-0 p-3">
-			<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div id="liveToast" class="toast bg-light" role="alert" aria-live="assertive" aria-atomic="true">
 				<div class="toast-header">
 					<img src="https://picsum.photos/200" class="rounded me-2 w-25" alt="...">
-					<strong class="me-auto">Toast message</strong>
-					<small>11 mins ago</small>
+					<strong class="me-auto">Congrats!</strong>
+					<small>Just now</small>
 					<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 				</div>
-				<div class="toast-body">
-					<p>A toast to you:</p>
-					<p>May you live happily and in great health. Cheers!</p>
+				<div class="toast-body text-center">
+					You've joined the Movement. Welcome.
 				</div>
 			</div>
 		</div>
