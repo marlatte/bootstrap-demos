@@ -7,9 +7,10 @@
 	<title>GRI Landing Page</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.typekit.net/pke3bbf.css">
 	<style>
 		:root {
-			--wm-navy: rgb(10, 63, 128);
+			--wm-navy: #0a3f80;
 			--wm-navy-light: hsl(213, 75%, 40%);
 			--bs-primary-rgb: 10, 63, 128;
 			--bs-primary:var(--wm-navy);
@@ -74,17 +75,18 @@
 			</path>
 		</symbol>
 	</svg>
-	<nav class="navbar navbar-expand-md bg-primary sticky-top" data-bs-theme="dark">
+	<nav class="navbar navbar-expand-lg bg-primary sticky-top" data-bs-theme="dark">
 		<div class="container-fluid">
-			<a href="./index.html"
-				class="navbar-brand px-3 bg-dark bg-gradient shadow-sm rounded-3 link-light link-opacity-75-hover">GRI</a>
+			<a href="./index.html" class="navbar-brand col-6 col-sm-3 col-lg-2">
+					<img src="./images/gri-logo-banner.PNG" alt="GRI gri-logo-banner" srcset="" class="img-fluid">
+			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-capitalize" style="--bs-navbar-color: hsl(63, 32%, 88%);">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'futura-pt',sans-serif;">
+				<ul class="navbar-nav ms-auto me-lg-4 mb-2 mb-lg-0 text-capitalize fs-4" style="--bs-navbar-color: hsl(63, 32%, 88%);">
 					<li class="nav-item">
 						<a class="nav-link" aria-current="page" href="./index.html">about us</a>
 					</li>
@@ -99,7 +101,7 @@
 							aria-expanded="false">
 							issues
 						</a>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu fs-5">
 							<li><a class="dropdown-item" href="#">spending</a></li>
 							<li><a class="dropdown-item" href="#">operations</a></li>
 							<li>
@@ -157,7 +159,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="tab-content" style="min-height: 500px;">
+			<div class="tab-content mb-5">
 				<div id="cards-pics-text" class="container mt-4 tab-pane fade show active">
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
 						<div class="col">
@@ -254,7 +256,7 @@
 					</div>
 				</div>
 				<div id="cards-pics" class="container mt-4 tab-pane fade">
-					<div class="d-flex justify-content-center align-items-center" style="height: 320px;">
+					<div class="d-flex justify-content-center align-items-center" style="height: 250px;">
 						<h4>Coming soon...</h4>
 					</div>
 				</div>
@@ -276,17 +278,22 @@
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="container-fluid bg-dark-subtle d-flex flex-wrap justify-content-center justify-content-sm-between align-items-center px-5 py-3 mt-4">
-			<div class="col-sm-7 d-flex gap-3 align-items-center justify-content-center justify-content-sm-start flex-wrap flex-sm-nowrap my-3 my-sm-0 mx-3 mx-sm-0">
-				<a href="./index.html" class="text-body-secondary text-decoration-none lh-1">
-					<svg class="bi" width="30" height="24">
-						<use xlink:href="#bootstrap"></use>
-					</svg>
+	<footer class="bg-dark-subtle">
+		<div class="container d-flex flex-wrap justify-content-center justify-content-sm-between align-items-center px-5 py-3 mt-4">
+			<div class="col-7 d-flex gap-3 align-items-center justify-content-center justify-content-sm-start flex-wrap flex-sm-nowrap my-3 my-sm-0 mx-3 mx-sm-0">
+				<a href="./index.html" class="col-4 col-md-2 col-lg-1">
+					<img src="./images/gri-logo-bw-clear.PNG" alt="GRI Logo small" class="img-fluid">
 				</a>
 				<span class="text-body-secondary text-center">© 2023 Walker Marlatt</span>
 			</div>
 			<ul class="d-flex nav list-unstyled gap-3">
+				<li>
+					<a href="./index.html" class="text-body-secondary text-decoration-none lh-1">
+						<svg class="bi" width="30" height="24">
+							<use xlink:href="#bootstrap"></use>
+						</svg>
+					</a>
+				</li>
 				<li>
 					<a class="text-body-secondary" href="./index.html">
 						<svg class="bi" width="24" height="24">
