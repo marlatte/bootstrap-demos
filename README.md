@@ -20,7 +20,7 @@ A space to practice and display my Bootstrap skills
 	- [ ] Mobile Layout
 		- [ ] Header/navbar
 		- [ ] Hero w/ card
-		- [ ] Accordion
+		- [x] Accordion
 	- [ ] Desktop Layout
 		- [ ] Header/navbar
 		- [ ] Hero w/ card (left)
