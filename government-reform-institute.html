@@ -16,6 +16,10 @@
 			--bs-primary:var(--wm-navy);
 		}
 
+		.text-futura {
+			font-family: "futura-pt", var(--bs-body-font-family);
+		}
+
 		#hero-img {
 			height: 500px;
 			background-image: url(https://picsum.photos/id/122/1000/500);
@@ -85,7 +89,7 @@
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'futura-pt',sans-serif;">
+			<div class="collapse navbar-collapse text-futura" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto me-lg-4 mb-2 mb-lg-0 text-capitalize fs-4" style="--bs-navbar-color: hsl(63, 32%, 88%);">
 					<li class="nav-item">
 						<a class="nav-link" aria-current="page" href="./index.html">about us</a>
@@ -280,11 +284,11 @@
 	</section>
 	<footer class="bg-dark-subtle">
 		<div class="container d-flex flex-wrap justify-content-center justify-content-sm-between align-items-center px-5 py-3 mt-4">
-			<div class="col-7 d-flex gap-3 align-items-center justify-content-center justify-content-sm-start flex-wrap flex-sm-nowrap my-3 my-sm-0 mx-3 mx-sm-0">
+			<div class="col-7 d-flex gap-3 align-items-center justify-content-center justify-content-sm-start flex-wrap flex-sm-nowrap mb-3 mb-sm-0">
 				<a href="./index.html" class="col-4 col-md-2 col-lg-1">
 					<img src="./images/gri-logo-bw-clear.PNG" alt="GRI Logo small" class="img-fluid">
 				</a>
-				<span class="text-body-secondary text-center">© 2023 Walker Marlatt</span>
+				<span class="pt-sm-2 text-body-secondary text-center text-futura fs-5">© 2023 Walker Marlatt</span>
 			</div>
 			<ul class="d-flex nav list-unstyled gap-3">
 				<li>
