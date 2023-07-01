@@ -10,10 +10,34 @@
 	<link rel="stylesheet" href="https://use.typekit.net/ztx4qzo.css">
 	<style>
 		:root {
-			--wm-dark-grey: rgb(28, 30, 35);
-			--wm-medium-grey: rgb(45, 49, 62);
-			--wm-light-grey: rgb(54, 61, 73);
-			--wm-green: hsl(71, 80%, 67%);
+			--wm-dark-grey: hsl(223, 11%, 12%);
+			--wm-medium-grey: hsl(228, 14%, 18%);
+			--wm-light-grey: hsl(218, 15%, 25%);
+			--wm-green-1: hsl(71, 80%, 67%);
+			--wm-green-2: hsl(91, 80%, 50%);
+		}
+
+		.navbar-brand {
+			background-color: var(--bs-light);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent; 
+			-moz-background-clip: text;
+  			-moz-text-fill-color: transparent;
+		}
+
+		.navbar-brand:hover {
+			background-image: linear-gradient(white 45%, black);
+		}
+
+		.oversized {
+			font-size: 3rem;
+			background-color: var(--bs-danger);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent; 
+			-moz-background-clip: text;
+  			-moz-text-fill-color: transparent;
 		}
 
 		.nav-link {
@@ -22,7 +46,7 @@
 		}
 
 		.nav-underline .nav-link.active {
-			color: var(--wm-green);
+			color: var(--wm-green-1);
 			border-bottom-color: var(--bs-danger);
 		}
 
@@ -50,7 +74,13 @@
 		}
 
 		.player-name {
-			color: var(--wm-green);
+			background-color: var(--wm-green-1);
+			background-image: linear-gradient(var(--wm-green-1) 50%, var(--wm-green-2));
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent; 
+			-moz-background-clip: text;
+  			-moz-text-fill-color: transparent;
 			text-transform: uppercase;
 		}
 
@@ -63,10 +93,6 @@
 
 		}
 
-		.oversized {
-			font-size: 3rem;
-		}
-
 		.accordion {
 			--bs-accordion-active-bg: black;
 			--bs-accordion-bg: none;
@@ -75,7 +101,7 @@
 		}
 
 		.accordion-button {
-			text-decoration: underline var(--wm-green) 2px;
+			text-decoration: underline var(--wm-green-1) 2px;
 			text-underline-offset: 10%;
 			font-size: 1.1rem;
 		}
@@ -131,11 +157,11 @@
 	</svg>
 	<nav class="navbar navbar-expand-md sticky-top bg-black bg-opacity-75 shadow-lg">
 		<div class="container-fluid">
-			<a class="navbar-brand link-light link-opacity-75-hover" href="./index.html">
+			<a class="navbar-brand link-light" href="./index.html">
 				<div class="d-flex align-items-center col-12" style="margin-top: -12px;">
-					<span class="text-danger oversized">[</span>
-					<span class="fw-medium fs-2 pt-2 bebas">Walker Marlatt</span>
-						<span class="text-danger oversized">]</span>
+					<span class="oversized">[</span>
+					<span id="brand-name" class="fw-medium fs-2 pt-2 bebas">Walker Marlatt</span>
+					<span class="oversized">]</span>
 				</div>
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -182,9 +208,11 @@
 	</nav>
 	<main class="container mt-md-3 mt-lg-4">
 		<div class="row">
-			<div id="hero" class="bg-wm-light py-3 col-12 col-md-4 col-lg-3 align-self-start rounded">
-				<div class="player-name text-center h1">Marlatt</div>
-				<div class="player-card"></div>
+			<div id="hero" class="col-12 col-md-4 col-lg-3">
+				<div class="bg-wm-light pt-3 rounded">
+					<div class="player-name text-center h1">Marlatt</div>
+					<div class="player-card"></div>
+				</div>
 			</div>
 			<div id="tab-panes" class="tab-content col-12 col-md-8 col-lg-9">
 				<div id="work-tab-pane" class="tab-pane fade accordion bg-wm-dark show active" tabindex="0">
@@ -342,7 +370,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="volunteering-tab-pane" class="tab-pane fade bg-wm-dark" tabindex="0">
+				<div id="volunteering-tab-pane" class="tab-pane fade bg-wm-dark p-3 rounded" tabindex="0">
 					<div id="rotaract" class="">
 						<h2 class="">
 							<span>Community Service Chair</span>
@@ -363,6 +391,7 @@
 							</div>
 						</div>
 					</div>
+					<hr>
 					<div id="umd-start" class="">
 						<h2 class="">
 							<span>Analysis Intern</span>
