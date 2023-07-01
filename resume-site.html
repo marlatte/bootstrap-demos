@@ -14,7 +14,8 @@
 			--wm-medium-grey: hsl(228, 14%, 18%);
 			--wm-light-grey: hsl(218, 15%, 25%);
 			--wm-green-1: hsl(71, 80%, 67%);
-			--wm-green-2: hsl(91, 80%, 50%);
+			--wm-green-2: rgb(124, 230, 25);
+			--wm-green-3: hsl(71, 80%, 75%);
 		}
 
 		.navbar-brand {
@@ -56,6 +57,7 @@
 		}
 
 		h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6,
 		.player-name,
 		.nav-link,
 		.scroll-button,
@@ -136,6 +138,23 @@
 
 		.accordion-button.collapsed>svg {
 			transform: rotate(-180deg);
+		}
+
+		#study-abroad .btn-primary {
+			--bs-btn-color: var(--wm-green-1);
+			--bs-btn-bg: var(--wm-medium-grey);
+			--bs-btn-border-color: var(--wm-green-1);
+			--bs-btn-hover-color: var(--wm-green-1);
+			--bs-btn-hover-bg: var(--wm-light-grey);
+			--bs-btn-hover-border-color: var(--wm-green-3);
+			--bs-btn-focus-shadow-rgb: 87, 152, 27;
+			--bs-btn-active-color: var(--wm-green-1);
+			--bs-btn-active-bg: ;
+			--bs-btn-active-border-color: ;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #fff;
+			--bs-btn-disabled-bg: #0d6efd;
+			--bs-btn-disabled-border-color: #0d6efd;
 		}
 	</style>
 </head>
@@ -372,23 +391,19 @@
 				</div>
 				<div id="volunteering-tab-pane" class="tab-pane fade bg-wm-dark p-3 rounded" tabindex="0">
 					<div id="rotaract" class="">
-						<h2 class="">
-							<span>Community Service Chair</span>
-						</h2>
-						<div id="" class="">
-							<div class="">
-								<div class="d-flex justify-content-between">
-									<em>Rotaract Club <br> Washington, DC </em>
-									<span>June '20 – June '21</span> <!-- 365 days -->
-								</div>
-								<ul>
-									<li>Organized and executed a virtual career fair, detailing strategy, updating
-										stakeholders, and managing project roadmap.</li>
-									<li>Established project scopes, expectations, and requirements for monthly service
-										events.</li>
-								</ul>
-
+						<h2 class="">Community Service Chair</h2>
+						<div>
+							<div class="d-flex justify-content-between">
+								<em>Rotaract Club <br> Washington, DC </em>
+								<span>June '20 – June '21</span> <!-- 365 days -->
 							</div>
+							<ul>
+								<li>Organized and executed a virtual career fair, detailing strategy, updating
+									stakeholders, and managing project roadmap.</li>
+								<li>Established project scopes, expectations, and requirements for monthly service
+									events.</li>
+							</ul>
+
 						</div>
 					</div>
 					<hr>
@@ -411,10 +426,31 @@
 						</div>
 					</div>
 				</div>
-				<div id="education-tab-pane" class="tab-pane fade accordion bg-wm-dark" tabindex="0">
-					<div id="uga" class=""></div>
-					<div id="study-abroad" class="accordion-item"></div>
-					<div id="certifications" class="accordion-item"></div>
+				<div id="education-tab-pane" class="tab-pane fade bg-wm-dark p-3 rounded" tabindex="0">
+					<div id="uga" class="">
+						<h2>The University of Georgia</h2>
+						<div class="d-flex">
+							<div>
+								<span>Bachelor of Arts in International Affairs</span><br>
+								<span class="fst-italic ">Athens, GA </span>
+							</div>
+							<span class="ms-auto">December 2017</span>
+						</div>
+					</div>
+					<hr>
+					<div id="study-abroad" class="">
+						<h4 class="text-dark-emphasis">Experience Abroad</h4>
+						<div class="mt-4">
+							<div class="row row-cols-2 row-cols-lg-4 justify-content-between justify-content-md-around">
+								<div class="d-flex justify-content-center mb-4 mb-lg-0"><button class="btn btn-primary btn-lg position-relative">Thailand<span class="badge text-bg-secondary position-absolute top-0 start-100 translate-middle">2022-'23</span></button></div>
+								<div class="d-flex justify-content-center mb-4 mb-lg-0"><button class="btn btn-primary btn-lg position-relative">Russia<span class="badge text-bg-secondary position-absolute top-0 start-100 translate-middle">2016</span></button></div>
+								<div class="d-flex justify-content-center"><button class="btn btn-primary btn-lg position-relative">Italy<span class="badge text-bg-secondary position-absolute top-0 start-100 translate-middle">2015</span></button></div>
+								<div class="d-flex justify-content-center"><button class="btn btn-primary btn-lg position-relative">Spain<span class="badge text-bg-secondary position-absolute top-0 start-100 translate-middle">2013</span></button></div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div id="certifications" class=""></div>
 				</div>
 				<div id="skill-tech-tab-pane" class="tab-pane fade accordion bg-wm-dark" tabindex="0">
 					<div id="languages" class=""></div>
