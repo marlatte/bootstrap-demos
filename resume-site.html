@@ -107,6 +107,8 @@
 			text-decoration: underline var(--wm-green-1) 2px;
 			text-underline-offset: 10%;
 			font-size: 1.1rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
 		}
 
 		.accordion-button>svg {
@@ -173,6 +175,12 @@
 			<title>Down Arrow</title>
 			<path fill-rule="evenodd" clip-rule="evenodd"
 				d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+			</path>
+		</symbol>
+		<symbol id="inkscape-logo" viewBox="0 0 16 16">
+			<title>Inkscape Logo</title>
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M163.15,27.83L28.81,165.3C-16.58,221.51 59.7,214.97 92.4,231.16C104.13,243.15 47.44,252 59.17,264C70.9,275.99 130.1,287.1 141.85,299.09C153.58,311.08 117.84,323.8 129.57,335.79C141.3,347.78 168.43,336.42 173.51,364.1C177.13,383.88 222.4,372.6 244.54,356.4C256.27,344.4 222.1,345.53 233.83,333.54C263,303.71 290.16,322.7 300.14,292.81C305.07,278.04 257.2,270.04 268.95,258.05C302.7,238.34 419.35,225.51 364,170.16L224.75,27.83C207.72,11.48 179.3,11.3 163.15,27.83 zM317.46,292.81C317.46,299.63 367.71,304.1 367.71,291.2C360.55,270.48 323.4,271.88 317.46,292.81 zM91.1,329.05C103,339.34 121.38,326.49 126.89,312.13C115.36,296.81 72.2,312.68 91.1,329.05 zM311.16,306.82C295.82,320.58 312.88,334.54 328,325.65C331.37,322.23 327.91,310.24 311.16,306.82z">
 			</path>
 		</symbol>
 	</svg>
@@ -242,7 +250,8 @@
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 								data-bs-target="#thida-details" aria-expanded="true"
 								aria-controls="thida-details">
-								<span class="fs-4">Science, Math, English Teacher</span>
+								<i class="fa-solid fa-chalkboard-user me-3"></i>
+								<span class="fs-4"></i>Science, Math, English Teacher</span>
 								<svg class="bi" width="45" height="36" fill="#d6ee67">
 									<use xlink:href="#down-arrow"></use>
 								</svg>
@@ -275,6 +284,7 @@
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 								data-bs-target="#rp-staffing-details" aria-expanded="false"
 								aria-controls="rp-staffing-details">
+								<i class="fa-solid fa-ranking-star me-3"></i>
 								<span class="fs-4">Marketing Associate</span>
 								<svg class="bi" width="45" height="36" fill="#d6ee67">
 									<use xlink:href="#down-arrow"></use>
@@ -309,6 +319,7 @@
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 								data-bs-target="#friends-of-the-earth-details" aria-expanded="false"
 								aria-controls="friends-of-the-earth-details">
+								<i class="fa-solid fa-screwdriver-wrench me-3"></i>
 								<span class="fs-4">Operations Specialist</span>
 								<svg class="bi" width="45" height="36" fill="#d6ee67">
 									<use xlink:href="#down-arrow"></use>
@@ -338,6 +349,7 @@
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 								data-bs-target="#ironarch-details" aria-expanded="false"
 								aria-controls="ironarch-details">
+								<i class="fa-solid fa-magnifying-glass-chart me-3"></i>
 								<span class="fs-4">Research & Media Analyst</span>
 								<svg class="bi" width="45" height="36" fill="#d6ee67">
 									<use xlink:href="#down-arrow"></use>
@@ -369,6 +381,7 @@
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 								data-bs-target="#common-courtesy-details" aria-expanded="false"
 								aria-controls="common-courtesy-details">
+								<i class="fa-solid fa-user-pen me-3"></i>
 								<span class="fs-4">Founder & Editor</span>
 								<svg class="bi" width="45" height="36" fill="#d6ee67">
 									<use xlink:href="#down-arrow"></use>
@@ -474,17 +487,16 @@
 					<div id="software">
 						<h2 class="text-dark-emphasis">Software</h2>
 						<div class="mt-4">
-							<div class="row row-cols-1 row-cols-lg-4 justify-content-start justify-content-md-around">
-								<!-- Add icon for each -->
-								<div class="d-flex justify-content-lg-center mb-4 mb-lg-0"><button class="d-flex align-items-center gap-2 btn btn-primary">JavaScript</button></div>
-								<div class="d-flex justify-content-lg-center mb-4 mb-lg-0"><button class="d-flex align-items-center gap-2 btn btn-primary">HTML <i class="fab fa-html5"></i></button></div>
-								<div class="d-flex justify-content-lg-center mb-4 mb-lg-0"><button class="d-flex align-items-center gap-2 btn btn-primary">CSS</button></div>
-								<div class="d-flex justify-content-lg-center mb-4 mb-lg-0"><button class="d-flex align-items-center gap-2 btn btn-primary">SQLite</button></div>
-								<div class="d-flex justify-content-lg-center mb-4 mb-lg-0"><button class="d-flex align-items-center gap-2 btn btn-primary">PowerPoint</button></div>
-								<div class="d-flex justify-content-lg-center mb-4 mb-lg-0"><button class="d-flex align-items-center gap-2 btn btn-primary">Word</button></div>
-								<div class="d-flex justify-content-lg-center mb-4 mb-lg-0"><button class="d-flex align-items-center gap-2 btn btn-primary">Excel</button></div>
-								<div class="d-flex justify-content-lg-center mb-4 mb-lg-0"><button class="d-flex align-items-center gap-2 btn btn-primary">Photoshop</button></div>
-								<div class="d-flex justify-content-lg-center mb-2 mb-lg-0"><button class="d-flex align-items-center gap-2 btn btn-primary">Inkscape</button></div>
+							<div class="row row-cols-1 row-cols-md-3 justify-content-start justify-content-md-around">
+								<div class="d-flex mb-3 order-0 order-md-0"><button class="d-flex align-items-center gap-2 btn btn-primary"><i class="fab fa-square-js fs-5"></i>JavaScript</button></div>
+								<div class="d-flex mb-3 order-1 order-md-0"><button class="d-flex align-items-center gap-2 btn btn-primary"><i class="fa-solid fa-file-lines"></i>Word</button></div>
+								<div class="d-flex mb-3 order-2 order-md-0"><button class="d-flex align-items-center gap-2 btn btn-primary"> <span class="d-flex align-items-center justify-content-center px-1 rounded-1" style="height: 1.2rem; width: 1.2rem; font-size: 0.75rem; background-color: var(--wm-green-1); color: var(--wm-dark-grey);">Ps</span>Photoshop</button></div>
+								<div class="d-flex mb-3 order-0 order-md-0"><button class="d-flex align-items-center gap-2 btn btn-primary"><i class="fab fa-html5"></i>HTML</button></div>
+								<div class="d-flex mb-3 order-1 order-md-0"><button class="d-flex align-items-center gap-2 btn btn-primary"><i class="fa-solid fa-chart-pie"></i>Excel</button></div>
+								<div class="d-flex mb-3 order-2 order-md-0"><button class="d-flex align-items-center gap-2 btn btn-primary"><i class="fa-solid fa-mountain"></i>Inkscape</button></div>
+								<div class="d-flex mb-3 order-0 order-md-0"><button class="d-flex align-items-center gap-2 btn btn-primary"><i class="fab fa-css3-alt"></i>CSS</button></div>
+								<div class="d-flex mb-3 order-1 order-md-0"><button class="d-flex align-items-center gap-2 btn btn-primary"><i class="fa-solid fa-display"></i>PowerPoint</button></div>
+								<div class="d-flex mb-3 order-2 order-md-0"><button class="d-flex align-items-center gap-2 btn btn-primary"><i class="fa-solid fa-database"></i>SQLite</button></div>
 							</div>
 						</div>
 					</div>				
