@@ -68,6 +68,12 @@
 			font-style: normal;
 		}
 
+		.din-font {
+			font-family: "din-2014-narrow", sans-serif;
+			font-weight: 600;
+			font-style: normal;
+		}
+
 		.bg-wm-light {
 			background-color: var(--wm-light-grey);
 		}
@@ -89,11 +95,11 @@
 
 		.player-card {
 			height: 400px;
-			background-image: url(./images/green-card.png);
+			background-image: url(./images/full-beach-card.png);
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
-
+			
 		}
 
 		.accordion {
@@ -107,8 +113,8 @@
 			text-decoration: underline var(--wm-green-1) 2px;
 			text-underline-offset: 10%;
 			font-size: 1.1rem;
-			padding-top: 2rem;
-			padding-bottom: 2rem;
+			padding-top: 2.1rem;
+			padding-bottom: 2.1rem;
 		}
 
 		.accordion-button>svg {
@@ -237,13 +243,14 @@
 	</nav>
 	<main class="container mt-md-3 mt-lg-4">
 		<div class="row">
-			<div id="hero" class="col-12 col-md-4 col-lg-3">
-				<div class="bg-wm-light pt-3 rounded">
+			<div id="hero" class="col-12 col-md-5 col-lg-4">
+				<div class="bg-wm-light py-3 rounded">
 					<div class="player-name text-center h1">Marlatt</div>
 					<div class="player-card"></div>
+					<!-- Card background created by juve11 on Fifarosters: https://www.fifarosters.com/card-designer?design_id=16200 -->
 				</div>
 			</div>
-			<div id="tab-panes" class="tab-content col-12 col-md-8 col-lg-9">
+			<div id="tab-panes" class="tab-content col">
 				<div id="work-tab-pane" class="tab-pane fade accordion bg-wm-dark show active" tabindex="0">
 					<div id="thida" class="accordion-item">
 						<h2 class="accordion-header">
